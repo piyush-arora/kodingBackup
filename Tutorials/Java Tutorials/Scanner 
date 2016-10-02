@@ -1,0 +1,71 @@
+
+Package
+
+import java.util.Scanner;
+
+
+
+Scanner is used to handle inputs
+
+// Create Scanner object
+Scanner myScanner = new Scanner(System.in);
+
+
+// Reading next inputs
+int data = myScanner.nextInt();
+
+// simillarly read double , float 
+
+
+// Reading string 
+String s = myScanner.nextLine();
+
+
+// Important Notes
+
+
+1. Reading data of multiple types specially reading string after int / or float 
+
+// use this technique 
+
+int data = Integer.parseint(myScanner.nextLine());
+String s = myScanner.nextLine();
+
+
+
+
+2.Reading multiple integer like reading array elements
+
+e.g. 
+
+5
+1 2 3 4 5
+
+// use this technique
+
+int n = myScanner.nextInt();
+
+int myArray[] = new int[n];
+
+for(int i=0 ; i<n ;i++)
+{
+    myArray[i] = myScanner.nextInt();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

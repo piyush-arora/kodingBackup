@@ -1,0 +1,6 @@
+Displaying floating decimal values uptp n devimal places 
+
+System.out.printf(".%nf  \n" + (float)integerData);
+
+
+

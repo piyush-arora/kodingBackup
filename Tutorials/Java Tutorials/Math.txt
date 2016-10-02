@@ -1,0 +1,9 @@
+1. to round off the double 
+
+
+Math.round(doubleData)
+
+
+----------------------------------------
+
+
