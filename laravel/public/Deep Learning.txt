@@ -1,0 +1,45 @@
+-----------------------------------------------------------
+    My Deep Leqarning Tutorials
+-----------------------------------------------------------
+
+1. Softmax Function
+
+
+S(yi) = e(yi)/(Summationj(e(j)))
+
+Use : any scores to proper probabilities
+
+      i.e sum to 1 
+      prob increases as scroe ais large 
+      prob small when scroess are small
+      
+      scores === logits
+      
+      
+      
+2. maths lib in python 
+
+import numpy as np
+
+
+Properties of softmax 
+
+scores * 10   === higher scores --> 1   low scores approaches to 0 ,, hence large deviation  (classifier is confident)
+scores/10 === all the probabilities evetually becomes somehow equal (classifer niot confident )
+
+
+As per machine learing we want to start with almost smae probabilities and then gradually increase the deviation
+
+
+3. One hot encoding 
+
+to represent lablels mathematically
+
+label == vectors 1.0 for correct clas and 0 for represent
+
+
+
+
+
+      
+      

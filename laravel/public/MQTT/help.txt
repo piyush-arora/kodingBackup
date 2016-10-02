@@ -1,0 +1,43 @@
+
+Links 
+
+1. terminal based mqtt cieent 
+
+https://www.baldengineer.com/mqtt-tutorial.html
+
+
+publisher
+
+mosquitto_pub -h test.mosquitto.org -i testPublish -t hacklabESP8266 -m 'CURRENT:10'
+
+
+subscriber
+
+ mosquitto_sub -h test.mosquitto.org -i testSub -t hacklabESP8266
+ 
+ 
+2. node js based mqtt-tutorial
+
+
+https://www.npmjs.com/package/mqtt#install
+
+
+3. to check which app is using which port
+
+http://www.cyberciti.biz/faq/what-process-has-open-linux-port/
+
+
+netstat -tulpn
+
+
+4. killing a what-process-has-open-linux-port
+
+
+
+http://www.cyberciti.biz/faq/kill-process-in-linux-or-terminate-a-process-in-unix-or-linux-systems/
+
+
+kill [PID] 
+kill 3486
+
+

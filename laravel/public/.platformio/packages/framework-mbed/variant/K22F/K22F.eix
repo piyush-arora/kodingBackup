@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="K22F">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m4"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mfpu=fpv4-sp-d16"/>
+                <Switch name="-mfloat-abi=softfp"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m4"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mfpu=fpv4-sp-d16"/>
+                <Switch name="-mfloat-abi=softfp"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="TARGET_KPSDK_MCUS"/>
+                <Symbol name="TARGET_FF_ARDUINO"/>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="CPU_MK22FN512VLH12"/>
+                <Symbol name="TARGET_CORTEX_M"/>
+                <Symbol name="__FPU_PRESENT=1"/>
+                <Symbol name="TARGET_Freescale"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448303572.56"/>
+                <Symbol name="TARGET_M4"/>
+                <Symbol name="__MBED__=1"/>
+                <Symbol name="TARGET_KPSDK_CODE"/>
+                <Symbol name="TARGET_K22F"/>
+                <Symbol name="__CORTEX_M4"/>
+                <Symbol name="FSL_RTOS_MBED"/>
+                <Symbol name="ARM_MATH_CM4"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-m4"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mfpu=fpv4-sp-d16"/>
+                <Switch name="-mfloat-abi=softfp"/>
+                <Switch name="--specs=nano.specs"/>
+                
+            </LD>
+            <Addobjects>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/startup_MK22F12.o"/>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/cmsis_nvic.o"/>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/mbed_overrides.o"/>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/retarget.o"/>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/system_MK22F51212.o"/>
+                <Addobject name="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/board.o"/>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM/K22FN512xxx12.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_K22F"/>
+                <Includepath path="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/MK22F51212"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/common"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock"/>
+                <Includepath path="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                <Library name="mbed"/>
+                
+            </Libraries>
+            <Librarypaths>
+                <Librarypath path="mbed/TARGET_K22F/TOOLCHAIN_GCC_ARM"/>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/system_MK22F51212.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/MK22F51212.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/PortNames.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/objects.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/PeripheralPins.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/gpio_object.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/PeripheralNames.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/PinNames.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/MK22F51212/fsl_clock_K22F51212.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/MK22F51212/fsl_sim_hal_K22F51212.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/fsl_device_registers.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_uart.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_fmc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_dmamux.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_sim.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_dac.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_ewm.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_mcg.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_cmp.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_pit.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_ftfa.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_ftm.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_dma.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_adc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_lpuart.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_crc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_smc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_rfsys.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_vref.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_mcm.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_nv.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_port.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/fsl_bitaccess.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_aips.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_pmc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_osc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_wdog.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_usb.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_gpio.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_pdb.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_rng.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_spi.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_i2s.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_fb.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_rfvbat.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_lptmr.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_i2c.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_llwu.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_K22F/device/MK22F51212/MK22F51212_rcm.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr/fsl_lptmr_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr/fsl_lptmr_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg/fsl_mcg_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg/fsl_mcg_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg/fsl_mcg_hal_modes.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc/fsl_osc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc/fsl_osc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac/fsl_dac_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac/fsl_dac_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu/fsl_llwu_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu/fsl_llwu_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc/fsl_smc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc/fsl_smc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu/fsl_mpu_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu/fsl_mpu_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai/fsl_sai_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai/fsl_sai_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c/fsl_i2c_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c/fsl_i2c_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc/fsl_rtc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc/fsl_rtc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port/fsl_port_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port/fsl_port_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet/fsl_enet_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet/fsl_enet_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc/fsl_pmc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc/fsl_pmc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer/fsl_ftm_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer/fsl_ftm_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog/fsl_wdog_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog/fsl_wdog_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi/fsl_dspi_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi/fsl_dspi_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb/fsl_pdb_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb/fsl_pdb_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma/fsl_edma_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma/fsl_edma_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart/fsl_lpuart_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart/fsl_lpuart_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit/fsl_pit_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit/fsl_pit_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can/fsl_flexcan_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can/fsl_flexcan_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio/fsl_gpio_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio/fsl_gpio_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart/fsl_uart_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart/fsl_uart_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim/fsl_sim_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim/fsl_sim_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc/fsl_adc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc/fsl_adc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux/fsl_dmamux_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux/fsl_dmamux_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm/fsl_rcm_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm/fsl_rcm_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc/fsl_sdhc_hal.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc/fsl_sdhc_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081/fsl_phy_driver.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet/fsl_enet_driver.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet/fsl_enet_rtcs_adapter.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/fsl_pit_driver.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/common/fsl_pit_common.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt/fsl_interrupt_features.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt/fsl_interrupt_manager.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock/fsl_clock_manager.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities/sw_timer.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities/fsl_os_abstraction_mbed.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities/fsl_misc_utilities.h" type="h"/>
+            <File  name="mbed/TARGET_K22F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities/fsl_os_abstraction.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>

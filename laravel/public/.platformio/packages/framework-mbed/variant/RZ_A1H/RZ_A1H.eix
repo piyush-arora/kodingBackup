@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="RZ_A1H">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-a9"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mthumb-interwork"/>
+                <Switch name="-marm"/>
+                <Switch name="-march=armv7-a"/>
+                <Switch name="-mfpu=vfpv3"/>
+                <Switch name="-mfloat-abi=hard"/>
+                <Switch name="-mno-unaligned-access"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-a9"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mthumb-interwork"/>
+                <Switch name="-marm"/>
+                <Switch name="-march=armv7-a"/>
+                <Switch name="-mfpu=vfpv3"/>
+                <Switch name="-mfloat-abi=hard"/>
+                <Switch name="-mno-unaligned-access"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="TARGET_RZ_A1H"/>
+                <Symbol name="TARGET_MBRZA1H"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448297167.62"/>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="TARGET_CORTEX_A"/>
+                <Symbol name="__MBED__=1"/>
+                <Symbol name="TARGET_RENESAS"/>
+                <Symbol name="TARGET_FF_ARDUINO"/>
+                <Symbol name="__MBED_CMSIS_RTOS_CA9"/>
+                <Symbol name="__EVAL"/>
+                <Symbol name="__FPU_PRESENT"/>
+                <Symbol name="__CMSIS_RTOS"/>
+                <Symbol name="TARGET_A9"/>
+                <Symbol name="__CORTEX_A9"/>
+                <Symbol name="ARM_MATH_CA9"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-a9"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-mthumb-interwork"/>
+                <Switch name="-marm"/>
+                <Switch name="-march=armv7-a"/>
+                <Switch name="-mfpu=vfpv3"/>
+                <Switch name="-mfloat-abi=hard"/>
+                <Switch name="-mno-unaligned-access"/>
+                <Switch name="--specs=nano.specs"/>
+                <Switch name="-u_printf_float"/>
+                <Switch name="-u_scanf_float"/>
+                
+            </LD>
+            <Addobjects>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/system_MBRZA1H.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/nvic_wrapper.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/rza_io_regrw.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/cmsis_nvic.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/RZ_A1_Init.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/retarget.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/mmu_Renesas_RZ_A1.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/mbed_sf_boot.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/gic.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/startup_RZ1AH.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/pl310.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/board.o"/>
+                <Addobject name="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/cache.o"/>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM/RZA1H.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_RZ_A1H"/>
+                <Includepath path="mbed/TARGET_RZ_A1H/TARGET_RENESAS"/>
+                <Includepath path="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H"/>
+                <Includepath path="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                <Library name="mbed"/>
+                
+            </Libraries>
+            <Librarypaths>
+                <Librarypath path="mbed/TARGET_RZ_A1H/TOOLCHAIN_GCC_ARM"/>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/adc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/lvds_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/dvdec_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ssif_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ieb_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/MBRZA1H.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/RZ_A1_Init.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/usb_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/lin_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/mlb_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/reg32_t.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/dmac_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ether_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/disc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/vdc5_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/system_MBRZA1H.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/cpg_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/r_typedefs.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/riic_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/mtu2_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/inb_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/pl310.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/nvic_wrapper.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/gic.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/spibsc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/gpio_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/rtc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/rspi_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/romdec_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/mmc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/sdg_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/irda_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/dmac_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/usb20_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/intc_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/rscan0_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/flctl_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/pfv_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/rspi_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/gpio_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/scim_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/mtu2_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/rza_io_regrw.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/jcu_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/pwm_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/spdif_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/wdt_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/scif_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/bsc_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/l2c_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/scux_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/bsc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ostm_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/cpg_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/intc_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/riic_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ceu_iodefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/dev_drv.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/scif_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/ostm_iobitmask.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/PeripheralNames.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/gpio_addrdefine.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/PortNames.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/objects.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/ethernetext_api.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/PinNames.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/device.h" type="h"/>
+            <File  name="mbed/TARGET_RZ_A1H/TARGET_RENESAS/TARGET_RZ_A1H/gpio_object.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="HRM1017">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="__CORTEX_M0"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448299477.15"/>
+                <Symbol name="TARGET_MCU_NRF51_16K"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="TARGET_MCU_NRF51822"/>
+                <Symbol name="TARGET_HRM1017"/>
+                <Symbol name="NRF51"/>
+                <Symbol name="TARGET_CORTEX_M"/>
+                <Symbol name="TARGET_NRF_LFCLK_RC"/>
+                <Symbol name="TARGET_NRF51822"/>
+                <Symbol name="ARM_MATH_CM0"/>
+                <Symbol name="__MBED__=1"/>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TARGET_NORDIC"/>
+                <Symbol name="TARGET_MCU_NRF51"/>
+                <Symbol name="TARGET_MCU_NORDIC_16K"/>
+                <Symbol name="TARGET_M0"/>
+                <Symbol name="TARGET_MCU_NRF51_16K_S130"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-m0"/>
+                <Switch name="-mthumb"/>
+                <Switch name="--specs=nano.specs"/>
+                
+            </LD>
+            <Addobjects>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/cmsis_nvic.o"/>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/retarget.o"/>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/system_nrf51.o"/>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/system_nrf51822.o"/>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/board.o"/>
+                <Addobject name="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/startup_NRF51822.o"/>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM/NRF51822.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_HRM1017"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/scheduler"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/util"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/crc16"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s130_nrf51822_1_0_0"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_8_0_0"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/sd_common"/>
+                <Includepath path="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_HRM1017"/>
+                <Includepath path="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                <Library name="mbed"/>
+                
+            </Libraries>
+            <Librarypaths>
+                <Librarypath path="mbed/TARGET_HRM1017/TOOLCHAIN_GCC_ARM"/>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nrf_delay.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nrf.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/system_nrf51.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nrf51_bitfields.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nrf51.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nrf51822.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/system_nrf51822.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/nordic_global.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/compiler_abstraction.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/twi_master.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/twi_config.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/scheduler/app_scheduler.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/util/app_error.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/util/app_util.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/crc16/crc16.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_l2cap.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_gap.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_error.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_err.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_gatts.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_gattc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_ranges.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/softdevice_assert.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_error_soc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_soc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_error_sdm.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_hci.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_svc.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_types.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble_gatt.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/ble.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_mbr.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_1_0/s110_nrf51822_7.1.0_API/include/nrf_sdm.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/nrf_delay.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/hci_transport.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_scheduler.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_error.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_button.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_util.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_uart.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/hci_mem_pool_internal.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/hci_slip.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/crc16.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_gpiote.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/pstorage.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_trace.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_timer.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/hal_transport.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/app_fifo.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/app_common/hci_mem_pool.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nrf-sdk/sd_common/app_util_platform.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_HRM1017/PinNames.h" type="h"/>
+            <File  name="mbed/TARGET_HRM1017/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_HRM1017/device.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>

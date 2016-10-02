@@ -1,0 +1,14 @@
+----------------------------------
+    Model
+-------------------------------
+
+
+1. Description : This class will mainly hold the data of all the interactable objects in the game 
+    1.1. Moving creatures 
+        This includes player aara , enmies , animals 
+    1.2. Non Moving Creatures
+        water , day lighteing , trees , 
+        
+        
+    
+    

@@ -1,0 +1,13 @@
+----------------------------------
+    livingModel
+-------------------------------
+
+
+1. Description : 
+These is the class common for all the living creatures in the game . this will have attribute like 
+    1.1. Strength
+    1.2. Armor
+    1.3. Intelligence
+    1.4. Aura
+    1.5. Attack Speed
+    

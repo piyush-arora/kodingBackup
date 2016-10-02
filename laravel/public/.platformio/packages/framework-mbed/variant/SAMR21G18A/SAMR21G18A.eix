@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="SAMR21G18A">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="TARGET_Atmel"/>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="TARGET_SAM_CortexM0P"/>
+                <Symbol name="EXTINT_CALLBACK_MODE=true"/>
+                <Symbol name="TARGET_CORTEX_M"/>
+                <Symbol name="TARGET_SAMR21G18A"/>
+                <Symbol name="TARGET_M0P"/>
+                <Symbol name="TARGET_SAMR21"/>
+                <Symbol name="__SAMR21G18A__"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448300846.77"/>
+                <Symbol name="USART_CALLBACK_MODE=true"/>
+                <Symbol name="__CORTEX_M0PLUS"/>
+                <Symbol name="TC_ASYNC=true"/>
+                <Symbol name="I2C_MASTER_CALLBACK_MODE=true"/>
+                <Symbol name="__MBED__=1"/>
+                <Symbol name="ARM_MATH_CM0PLUS"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="--specs=nano.specs"/>
+                
+            </LD>
+            <Addobjects>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/startup_samr21.o"/>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/cmsis_nvic.o"/>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/system_samr21.o"/>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/mbed_overrides.o"/>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/retarget.o"/>
+                <Addobject name="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/board.o"/>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM/samr21g18a.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/SAMR21_XPLAINED_PRO"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/tcc"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/dac"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/extint"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/power"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/power/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/pinmux"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/interrupt"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/interrupt/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/reset"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/reset/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/tc"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/rtc"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/services"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/services/delay"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/services/delay/sam0"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/port"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/usart"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/adc"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/adc/TARGET_SAMR21"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/dma"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common/utils"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common/utils/interrupt"/>
+                <Includepath path="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                <Library name="mbed"/>
+                
+            </Libraries>
+            <Librarypaths>
+                <Librarypath path="mbed/TARGET_SAMR21G18A/TOOLCHAIN_GCC_ARM"/>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_evsys.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_nvmctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_pm.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/system_samr21.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21e18a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_gclk.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_port.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_dsu.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tc4.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom4.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom3.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_dmac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_adc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21g16a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tc3.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_dmac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_eic.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_adc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21g18a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_usb.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tcc1.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21e17a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/compiler.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_wdt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_usb.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_rfctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tc5.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/status_codes.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21g17a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/stringz.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/mrecursion.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_dsu.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/io.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_ac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21g18a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_sysctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_tc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom2.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_pac0.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom5.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_pac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21g16a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_mtb.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_tcc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom1.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/mrepeat.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_ac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tcc2.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_sercom.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21e18a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_pm.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_hmatrixb.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21e17a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_pac1.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sercom0.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_evsys.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/preprocessor.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_port.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_nvmctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21e16a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_rfctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/samr21g17a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_mtb.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_eic.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/comp_gclk.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/tpaste.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sysctrl.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/pio_samr21e16a.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_sbmatrix.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_wdt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_pac2.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/ins_tcc0.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/PortNames.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/objects.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/sercom_dma.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/dma_api_HAL.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/pinmap_function.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/gpio_object.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/PeripheralNames.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/PinNames.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/PeripheralPins.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/device.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/TARGET_SAMR21G18A/SAMR21_XPLAINED_PRO/samr21_xplained_pro.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_extint.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_clocks.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_dma.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_test.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_board.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/config/TARGET_SAMR21/conf_spi.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/tcc/tcc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/dac/dac.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/extint/extint_callback.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/extint/extint.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/system.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/power/TARGET_SAMR21/power.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/pinmux/pinmux.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/interrupt/system_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/interrupt/TARGET_SAMR21/system_interrupt_features.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock/gclk.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock/clock.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock/TARGET_SAMR21/clock_feature.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/clock/TARGET_SAMR21/clock_config_check.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/system/reset/TARGET_SAMR21/reset.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/tc/tc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/tc/tc_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/rtc/rtc_count.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/services/delay/delay.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/services/delay/sam0/systick_counter.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/port/port.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/sercom.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/sercom_pinout.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/sercom_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/usart/usart_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/usart/usart.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c/i2c_slave.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c/i2c_slave_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c/i2c_master_interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c/i2c_common.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/sercom/i2c/i2c_master.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/adc/adc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/adc/TARGET_SAMR21/adc_feature.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/dma/dma_crc.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/TARGET_SAM_CortexM0P/drivers/dma/dma.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common/utils/interrupt.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common/utils/parts.h" type="h"/>
+            <File  name="mbed/TARGET_SAMR21G18A/TARGET_Atmel/common/utils/interrupt/interrupt_sam_nvic.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>

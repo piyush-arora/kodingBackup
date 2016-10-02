@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "engine.io": "^1.6.11",
+    "engine.io-client": "^1.6.11",
+    "firebase": "^3.2.1",
+    "laravel-elixir": "^4.0.0",
+    "mongodb": "^2.2.4",
+    "mqtt": "^1.12.0"
+  }
+}

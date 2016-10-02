@@ -1,0 +1,12 @@
+----------------------------------
+    playerModel
+-------------------------------
+
+
+1. Description : This class will attach to the main player AAra 
+
+being the child of living model class it will have all the living MOdel features but it will have some special features speicially for the playerModel
+
+    1.1. Skills 
+    1.2. Abilities 
+    1.3. Many more 

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="EFM32HG_STK3400">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="TARGET_CORTEX_M"/>
+                <Symbol name="TARGET_Silicon_Labs"/>
+                <Symbol name="TARGET_M0P"/>
+                <Symbol name="EFM32HG322F64"/>
+                <Symbol name="TARGET_EFM32"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448305066.42"/>
+                <Symbol name="__CORTEX_M0PLUS"/>
+                <Symbol name="TARGET_EFM32HG_STK3400"/>
+                <Symbol name="__MBED__=1"/>
+                <Symbol name="ARM_MATH_CM0PLUS"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-m0plus"/>
+                <Switch name="-mthumb"/>
+                <Switch name="--specs=nano.specs"/>
+                
+            </LD>
+            <Addobjects>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/cmsis_nvic.o"/>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/mbed_overrides.o"/>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/retarget.o"/>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/startup_efm32hg.o"/>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/board.o"/>
+                <Addobject name="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/system_efm32hg.o"/>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM/efm32hg.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400"/>
+                <Includepath path="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                <Library name="mbed"/>
+                
+            </Libraries>
+            <Librarypaths>
+                <Librarypath path="mbed/TARGET_EFM32HG_STK3400/TOOLCHAIN_GCC_ARM"/>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_usb_diep.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_calibrate.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_dma_descriptor.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_dma.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_timer_cc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/system_efm32hg.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_adc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_pcnt.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_aes.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_gpio.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_emu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_dmactrl.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_wdog.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_i2c.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_rmu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_devinfo.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_dma_ch.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_af_ports.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_af_pins.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/em_device.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_usart.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg322f64.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_idac.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_prs_signals.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_leuart.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_timer.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_dmareq.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_prs_ch.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_gpio_p.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_mtb.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_romtable.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_usb.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_acmp.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_cmu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_msc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_prs.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_usb_doep.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/efm32hg_vcmp.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/clocking.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/objects.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/sleepmodes.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/rtc_api_HAL.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/dma_api_HAL.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/pinmap_function.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/gpio_object.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/error.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_ebi.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_dma.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_dbg.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_lesense.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_opamp.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_adc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_acmp.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_usart.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_part.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_dac.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_assert.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_msc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_timer.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_i2c.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_prs.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_bitband.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_version.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_idac.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_common.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_burtc.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_vcmp.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_emu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_mpu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_pcnt.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_system.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_wdog.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_chip.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_lcd.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_aes.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_int.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_gpio.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_letimer.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_leuart.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_cmu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/emlib/inc/em_rmu.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/PeripheralNames.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/device_peripherals.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/PortNames.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/PinNames.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/PeripheralPins.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/Modules.h" type="h"/>
+            <File  name="mbed/TARGET_EFM32HG_STK3400/TARGET_Silicon_Labs/TARGET_EFM32/TARGET_EFM32HG_STK3400/device.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>

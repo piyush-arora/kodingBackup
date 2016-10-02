@@ -1,0 +1,51 @@
+Codiad Documentation
+
+
+COMPONENTS -----> ./components
+PLUGINS ------> ./plugins
+THEMES --------> ./themes
+THEME --------. 'default'
+
+
+
+
+
+
+
+----------------------------------
+    RIGHT CLICK MENU  FOR EXPLORE
+----------------------------------
+
+./components/filemanager/context_menu.json
+
+
+
+
+
+-----------------------
+    RIGHT BAR
+-----------------------
+
+./components/right_bar.json
+
+
+
+
+--------------------------------
+    ALL CSS FILES 
+--------------------------------
+
+/themes/default/
+
+
+--------------------------
+    ALL JS FILES
+-------------------------
+
+/js
+
+
+
+
+
+

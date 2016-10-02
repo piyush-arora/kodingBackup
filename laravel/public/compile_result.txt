@@ -1,0 +1,46 @@
+[Fri Mar 25 13:55:46 2016] Processing nanoatmega328 (platform: atmelavr, board: nanoatmega328, framework: arduino)
+--------------------------------------------------------------------------------
+The platform 'atmelavr' has not been installed yet. Would you like to install it now? [y/N]: Error: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/platformio/__main__.py", line 107, in main
+    cli(None, None, None)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 700, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 680, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 1027, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 873, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python2.7/dist-packages/click/core.py", line 508, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/click/decorators.py", line 16, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/platformio/commands/run.py", line 90, in cli
+    results.append(ep.process())
+  File "/usr/local/lib/python2.7/dist-packages/platformio/commands/run.py", line 126, in process
+    result = self._run()
+  File "/usr/local/lib/python2.7/dist-packages/platformio/commands/run.py", line 192, in _run
+    return p.run(build_vars, build_targets, self.verbose_level)
+  File "/usr/local/lib/python2.7/dist-packages/platformio/platforms/base.py", line 426, in run
+    self._install_default_packages()
+  File "/usr/local/lib/python2.7/dist-packages/platformio/platforms/base.py", line 411, in _install_default_packages
+    "Would you like to install it now?" % self.get_type())):
+  File "/usr/local/lib/python2.7/dist-packages/click/termui.py", line 136, in confirm
+    value = visible_prompt_func('').lower().strip()
+IOError: [Errno 22] Invalid argument
+
+============================================================
+
+An unexpected error occurred. Further steps:
+
+* Verify that you have the latest version of PlatformIO using
+  `pip install -U platformio` command
+
+* Try to find answer in FAQ Troubleshooting section
+  http://docs.platformio.org/en/latest/faq.html
+
+* Report this problem to the developers
+  https://github.com/platformio/platformio/issues
+
+============================================================
+

@@ -1,0 +1,9 @@
+Sno    Weight           Texture         Label
+
+ 1      150             Bumpy(0)        Orange (1)
+ 2      170             Bumpy(0)        Orange (1)
+ 3      140             Smooth(1)       Apple(0)
+ 4      130             Smooth(1)       Apple(0)
+ 
+ 
+ 

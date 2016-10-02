@@ -1,0 +1,16 @@
+[Sun Feb  7 01:53:02 2016] Processing nanoatmega328 (platform: atmelavr, board: nanoatmega328, framework: arduino)
+---------------------------------------------------------------------------------------------
+scons: `.pioenvs/nanoatmega328/firmware.hex' is up to date.
+"avr-size" --mcu=atmega328p -C -d .pioenvs/nanoatmega328/firmware.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     436 bytes (1.3% Full)
+(.text + .data + .bootloader)
+
+Data:          9 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+================================ [SUCCESS] Took 0.44 seconds ================================

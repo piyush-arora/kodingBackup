@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project emblocks_ix="1.0.0" name="MBED_A1">
+    <Target name="MBED_A1" target="DISCO_F746NG">
+        <Source name="mbed.org" version="1.0.0">
+            <Toolchain name="GCC_ARM"/>
+            <CC>
+                <Switch name="-std=gnu99"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m7"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CC>
+            <CPPC>
+                <Switch name="-std=gnu++98"/>
+                <Switch name="-fno-rtti"/>
+                <Switch name="-c"/>
+                <Switch name="-Wall"/>
+                <Switch name="-Wextra"/>
+                <Switch name="-Wno-unused-parameter"/>
+                <Switch name="-Wno-missing-field-initializers"/>
+                <Switch name="-fmessage-length=0"/>
+                <Switch name="-fno-exceptions"/>
+                <Switch name="-fno-builtin"/>
+                <Switch name="-ffunction-sections"/>
+                <Switch name="-fdata-sections"/>
+                <Switch name="-MMD"/>
+                <Switch name="-fno-delete-null-pointer-checks"/>
+                <Switch name="-fomit-frame-pointer"/>
+                <Switch name="-mcpu=cortex-m7"/>
+                <Switch name="-mthumb"/>
+                <Switch name="-O2"/>
+                
+            </CPPC>
+            <Symbols>
+                <Symbol name="TOOLCHAIN_GCC_ARM"/>
+                <Symbol name="TOOLCHAIN_GCC"/>
+                <Symbol name="TARGET_STM32F746NG"/>
+                <Symbol name="TARGET_STM32F746"/>
+                <Symbol name="ARM_MATH_CM7"/>
+                <Symbol name="TARGET_CORTEX_M"/>
+                <Symbol name="__CORTEX_M7"/>
+                <Symbol name="TARGET_DISCO_F746NG"/>
+                <Symbol name="MBED_BUILD_TIMESTAMP=1448299978.91"/>
+                <Symbol name="TARGET_STM"/>
+                <Symbol name="TARGET_M7"/>
+                <Symbol name="TARGET_STM32F7"/>
+                <Symbol name="__MBED__=1"/>
+                
+            </Symbols>
+            <LD>
+                <Switch name="-Wl,--gc-sections"/>
+                <Switch name="-Wl,--wrap,main"/>
+                <Switch name="-mcpu=cortex-m7"/>
+                <Switch name="-mthumb"/>
+                <Switch name="--specs=nano.specs"/>
+                <Switch name="-u_printf_float"/>
+                <Switch name="-u_scanf_float"/>
+                
+            </LD>
+            <Addobjects>
+                
+            </Addobjects>
+            <Syslibs>
+                <Library name="stdc++"/>
+                <Library name="supc++"/>
+                <Library name="m"/>
+                <Library name="c"/>
+                <Library name="gcc"/>
+                <Library name="nosys"/>
+                
+            </Syslibs>
+            <Scriptfile path="mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM/STM32F746NG.ld"/>
+        </Source>
+        <Assembler>
+        </Assembler>
+        <Compiler>
+            <Includepaths>
+                <Includepath path="."/>
+                <Includepath path="env"/>
+                <Includepath path="mbed"/>
+                <Includepath path="mbed/TARGET_DISCO_F746NG"/>
+                <Includepath path="mbed/TARGET_DISCO_F746NG/TOOLCHAIN_GCC_ARM"/>
+                
+            </Includepaths>
+            <Symbols>
+            </Symbols>
+        </Compiler>
+        <Linker>
+            <Libraries>
+                
+            </Libraries>
+            <Librarypaths>
+                
+            </Librarypaths>
+        </Linker>
+        <Files>
+            <File  name="env/test_env.h" type="h"/>
+            <File  name="mbed/pinmap.h" type="h"/>
+            <File  name="mbed/LowPowerTimer.h" type="h"/>
+            <File  name="mbed/TimerEvent.h" type="h"/>
+            <File  name="mbed/rtc_api.h" type="h"/>
+            <File  name="mbed/Timer.h" type="h"/>
+            <File  name="mbed/RawSerial.h" type="h"/>
+            <File  name="mbed/CAN.h" type="h"/>
+            <File  name="mbed/PortIn.h" type="h"/>
+            <File  name="mbed/CallChain.h" type="h"/>
+            <File  name="mbed/can_api.h" type="h"/>
+            <File  name="mbed/Stream.h" type="h"/>
+            <File  name="mbed/FileBase.h" type="h"/>
+            <File  name="mbed/ticker_api.h" type="h"/>
+            <File  name="mbed/AnalogOut.h" type="h"/>
+            <File  name="mbed/InterruptIn.h" type="h"/>
+            <File  name="mbed/InterruptManager.h" type="h"/>
+            <File  name="mbed/i2c_api.h" type="h"/>
+            <File  name="mbed/BusIn.h" type="h"/>
+            <File  name="mbed/can_helper.h" type="h"/>
+            <File  name="mbed/SerialBase.h" type="h"/>
+            <File  name="mbed/Ticker.h" type="h"/>
+            <File  name="mbed/platform.h" type="h"/>
+            <File  name="mbed/BusInOut.h" type="h"/>
+            <File  name="mbed/us_ticker_api.h" type="h"/>
+            <File  name="mbed/FileLike.h" type="h"/>
+            <File  name="mbed/FileSystemLike.h" type="h"/>
+            <File  name="mbed/PwmOut.h" type="h"/>
+            <File  name="mbed/DigitalInOut.h" type="h"/>
+            <File  name="mbed/analogin_api.h" type="h"/>
+            <File  name="mbed/serial_api.h" type="h"/>
+            <File  name="mbed/FileHandle.h" type="h"/>
+            <File  name="mbed/rtc_time.h" type="h"/>
+            <File  name="mbed/CircularBuffer.h" type="h"/>
+            <File  name="mbed/mbed_debug.h" type="h"/>
+            <File  name="mbed/sleep_api.h" type="h"/>
+            <File  name="mbed/SPISlave.h" type="h"/>
+            <File  name="mbed/FunctionPointer.h" type="h"/>
+            <File  name="mbed/port_api.h" type="h"/>
+            <File  name="mbed/LocalFileSystem.h" type="h"/>
+            <File  name="mbed/wait_api.h" type="h"/>
+            <File  name="mbed/Ethernet.h" type="h"/>
+            <File  name="mbed/analogout_api.h" type="h"/>
+            <File  name="mbed/mbed_interface.h" type="h"/>
+            <File  name="mbed/LowPowerTicker.h" type="h"/>
+            <File  name="mbed/pwmout_api.h" type="h"/>
+            <File  name="mbed/Transaction.h" type="h"/>
+            <File  name="mbed/buffer.h" type="h"/>
+            <File  name="mbed/DigitalOut.h" type="h"/>
+            <File  name="mbed/PortInOut.h" type="h"/>
+            <File  name="mbed/AnalogIn.h" type="h"/>
+            <File  name="mbed/I2C.h" type="h"/>
+            <File  name="mbed/PortOut.h" type="h"/>
+            <File  name="mbed/toolchain.h" type="h"/>
+            <File  name="mbed/dma_api.h" type="h"/>
+            <File  name="mbed/DigitalIn.h" type="h"/>
+            <File  name="mbed/mbed.h" type="h"/>
+            <File  name="mbed/DirHandle.h" type="h"/>
+            <File  name="mbed/SPI.h" type="h"/>
+            <File  name="mbed/BusOut.h" type="h"/>
+            <File  name="mbed/Timeout.h" type="h"/>
+            <File  name="mbed/gpio_irq_api.h" type="h"/>
+            <File  name="mbed/CThunk.h" type="h"/>
+            <File  name="mbed/gpio_api.h" type="h"/>
+            <File  name="mbed/mbed_error.h" type="h"/>
+            <File  name="mbed/I2CSlave.h" type="h"/>
+            <File  name="mbed/spi_api.h" type="h"/>
+            <File  name="mbed/FilePath.h" type="h"/>
+            <File  name="mbed/Serial.h" type="h"/>
+            <File  name="mbed/lp_ticker_api.h" type="h"/>
+            <File  name="mbed/semihost_api.h" type="h"/>
+            <File  name="mbed/ethernet_api.h" type="h"/>
+            <File  name="mbed/LowPowerTimeout.h" type="h"/>
+            <File  name="mbed/mbed_assert.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/hal_tick.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cmFunc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dma_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_can.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_uart_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_rcc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm0plus.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_crc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_qspi.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_tim.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/cmsis.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_uart.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_hash_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_flash.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_conf.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_ltdc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_tim_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_irda_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_pwr.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_eth.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dcmi.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dcmi_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_spdifrx.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_lptim.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm4_simd.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_caFunc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_irda.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_rcc_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32_hal_legacy.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_caInstr.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_rtc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/arm_common_tables.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_ll_sdmmc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cmSimd.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_ll_fmc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dma2d.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm3.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_def.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_rtc_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_sai_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cmInstr.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_gpio_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_wwdg.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_hcd.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm0.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_sc300.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_sai.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_ca_mmu.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_ll_usb.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_i2c_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_iwdg.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_hash.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/arm_math.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_spi.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm4.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_smartcard.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_usart_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_nand.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_ca9.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/arm_const_structs.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_cryp.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_cm7.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_adc.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dac_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/cmsis_nvic.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f746xx.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_sram.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_rng.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_smartcard_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_nor.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_i2s.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_adc_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/core_sc000.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_i2c.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_cec.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_sdram.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_flash_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_pwr_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dac.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_cortex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_dma.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_sd.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_cryp_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_usart.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_crc_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_pcd_ex.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/system_stm32f7xx.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_pcd.h" type="h"/>
+            <File  name="mbed/TARGET_DISCO_F746NG/stm32f7xx_hal_gpio.h" type="h"/>
+            <File  name="main.cpp" type="cpp"/>
+            <File  name="env/test_env.cpp" type="cpp"/>
+            
+        </Files>
+    </Target>
+</Project>
